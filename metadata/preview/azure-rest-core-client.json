@@ -1,0 +1,14 @@
+{
+  "Name": "@azure-rest/core-client",
+  "Version": "1.2.0-alpha.20240108.2",
+  "DevVersion": "1.2.0-alpha.20240122.3",
+  "DirectoryPath": "sdk/core/core-client-rest",
+  "ServiceDirectory": "core",
+  "ReadMePath": "sdk/core/core-client-rest/README.md",
+  "ChangeLogPath": "sdk/core/core-client-rest/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-rest-core-client",
+  "ReleaseStatus": "Unreleased"
+}
