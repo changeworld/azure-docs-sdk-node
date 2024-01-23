@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: BrowserSdkLoaderOptions
+uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderOptions'
+package: '@azure/monitor-opentelemetry'
+summary: Application Insights Web Instrumentation Configuration interface
+fullName: BrowserSdkLoaderOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: config
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderOptions.config'
+    package: '@azure/monitor-opentelemetry'
+    summary: Browser SDK Loader Config
+    fullName: config
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'config?: BrowserSdkLoaderConfig'
+      return:
+        description: ''
+        type: <xref uid="@azure/monitor-opentelemetry.BrowserSdkLoaderConfig" />
+  - name: connectionString
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderOptions.connectionString'
+    package: '@azure/monitor-opentelemetry'
+    summary: Browser SDK Loader Connection String
+    fullName: connectionString
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'connectionString?: string'
+      return:
+        description: ''
+        type: string
+  - name: enabled
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderOptions.enabled'
+    package: '@azure/monitor-opentelemetry'
+    summary: Browser SDK Loader Enable
+    fullName: enabled
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enabled?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: src
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderOptions.src'
+    package: '@azure/monitor-opentelemetry'
+    summary: The full URL for where to load the SDK from
+    fullName: src
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'src?: string'
+      return:
+        description: ''
+        type: string

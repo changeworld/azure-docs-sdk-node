@@ -9,30 +9,30 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      beginCreateOrUpdate(string, ProvisionedClusters,
+      beginCreateOrUpdate(string, ProvisionedCluster,
       ProvisionedClusterInstancesCreateOrUpdateOptionalParams)
     uid: >-
       @azure/arm-hybridcontainerservice.ProvisionedClusterInstances.beginCreateOrUpdate
     package: '@azure/arm-hybridcontainerservice'
-    summary: Creates the Hybrid AKS provisioned cluster instance
+    summary: Creates or updates the provisioned cluster instance
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         function beginCreateOrUpdate(connectedClusterResourceUri: string,
-        provisionedClusterInstance: ProvisionedClusters, options?:
+        provisionedClusterInstance: ProvisionedCluster, options?:
         ProvisionedClusterInstancesCreateOrUpdateOptionalParams):
-        Promise<SimplePollerLike<OperationState<ProvisionedClusters>,
-        ProvisionedClusters>>
+        Promise<SimplePollerLike<OperationState<ProvisionedCluster>,
+        ProvisionedCluster>>
       parameters:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: provisionedClusterInstance
-          type: <xref uid="@azure/arm-hybridcontainerservice.ProvisionedClusters" />
-          description: The provisionedClusterInstances resource definition.
+          type: <xref uid="@azure/arm-hybridcontainerservice.ProvisionedCluster" />
+          description: Provisioned Cluster resource definition
         - id: options
           type: >-
             <xref
@@ -43,33 +43,33 @@ methods:
         description: ''
         type: >-
           Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
-          uid="@azure/arm-hybridcontainerservice.ProvisionedClusters" />&gt;,
-          <xref uid="@azure/arm-hybridcontainerservice.ProvisionedClusters"
+          uid="@azure/arm-hybridcontainerservice.ProvisionedCluster" />&gt;,
+          <xref uid="@azure/arm-hybridcontainerservice.ProvisionedCluster"
           />&gt;&gt;
   - name: >-
-      beginCreateOrUpdateAndWait(string, ProvisionedClusters,
+      beginCreateOrUpdateAndWait(string, ProvisionedCluster,
       ProvisionedClusterInstancesCreateOrUpdateOptionalParams)
     uid: >-
       @azure/arm-hybridcontainerservice.ProvisionedClusterInstances.beginCreateOrUpdateAndWait
     package: '@azure/arm-hybridcontainerservice'
-    summary: Creates the Hybrid AKS provisioned cluster instance
+    summary: Creates or updates the provisioned cluster instance
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         function beginCreateOrUpdateAndWait(connectedClusterResourceUri: string,
-        provisionedClusterInstance: ProvisionedClusters, options?:
+        provisionedClusterInstance: ProvisionedCluster, options?:
         ProvisionedClusterInstancesCreateOrUpdateOptionalParams):
-        Promise<ProvisionedClusters>
+        Promise<ProvisionedCluster>
       parameters:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: provisionedClusterInstance
-          type: <xref uid="@azure/arm-hybridcontainerservice.ProvisionedClusters" />
-          description: The provisionedClusterInstances resource definition.
+          type: <xref uid="@azure/arm-hybridcontainerservice.ProvisionedCluster" />
+          description: Provisioned Cluster resource definition
         - id: options
           type: >-
             <xref
@@ -80,11 +80,11 @@ methods:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-hybridcontainerservice.ProvisionedClusters" />&gt;
+          uid="@azure/arm-hybridcontainerservice.ProvisionedCluster" />&gt;
   - name: beginDelete(string, ProvisionedClusterInstancesDeleteOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.ProvisionedClusterInstances.beginDelete'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Deletes the Hybrid AKS provisioned cluster instance
+    summary: Deletes the provisioned cluster instance
     remarks: ''
     isDeprecated: false
     syntax:
@@ -97,7 +97,7 @@ methods:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -119,7 +119,7 @@ methods:
     uid: >-
       @azure/arm-hybridcontainerservice.ProvisionedClusterInstances.beginDeleteAndWait
     package: '@azure/arm-hybridcontainerservice'
-    summary: Deletes the Hybrid AKS provisioned cluster instance
+    summary: Deletes the provisioned cluster instance
     remarks: ''
     isDeprecated: false
     syntax:
@@ -131,7 +131,7 @@ methods:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -152,8 +152,8 @@ methods:
       @azure/arm-hybridcontainerservice.ProvisionedClusterInstances.beginListAdminKubeconfig
     package: '@azure/arm-hybridcontainerservice'
     summary: >-
-      Lists the admin credentials of a provisioned cluster instance used only in
-      direct mode.
+      Lists the admin credentials of the provisioned cluster (can only be used
+      within private network)
     remarks: ''
     isDeprecated: false
     syntax:
@@ -166,7 +166,7 @@ methods:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -188,8 +188,8 @@ methods:
       @azure/arm-hybridcontainerservice.ProvisionedClusterInstances.beginListAdminKubeconfigAndWait
     package: '@azure/arm-hybridcontainerservice'
     summary: >-
-      Lists the admin credentials of a provisioned cluster instance used only in
-      direct mode.
+      Lists the admin credentials of the provisioned cluster (can only be used
+      within private network)
     remarks: ''
     isDeprecated: false
     syntax:
@@ -202,7 +202,7 @@ methods:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -222,8 +222,8 @@ methods:
       @azure/arm-hybridcontainerservice.ProvisionedClusterInstances.beginListUserKubeconfig
     package: '@azure/arm-hybridcontainerservice'
     summary: >-
-      Lists the AAD user credentials of a provisioned cluster instance used only
-      in direct mode.
+      Lists the user credentials of the provisioned cluster (can only be used
+      within private network)
     remarks: ''
     isDeprecated: false
     syntax:
@@ -236,7 +236,7 @@ methods:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -258,8 +258,8 @@ methods:
       @azure/arm-hybridcontainerservice.ProvisionedClusterInstances.beginListUserKubeconfigAndWait
     package: '@azure/arm-hybridcontainerservice'
     summary: >-
-      Lists the AAD user credentials of a provisioned cluster instance used only
-      in direct mode.
+      Lists the user credentials of the provisioned cluster (can only be used
+      within private network)
     remarks: ''
     isDeprecated: false
     syntax:
@@ -272,7 +272,7 @@ methods:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -288,19 +288,19 @@ methods:
   - name: get(string, ProvisionedClusterInstancesGetOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.ProvisionedClusterInstances.get'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Gets the Hybrid AKS provisioned cluster instance
+    summary: Gets the provisioned cluster instance
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         function get(connectedClusterResourceUri: string, options?:
         ProvisionedClusterInstancesGetOptionalParams):
-        Promise<ProvisionedClusters>
+        Promise<ProvisionedCluster>
       parameters:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -312,14 +312,14 @@ methods:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-hybridcontainerservice.ProvisionedClusters" />&gt;
+          uid="@azure/arm-hybridcontainerservice.ProvisionedCluster" />&gt;
   - name: >-
       getUpgradeProfile(string,
       ProvisionedClusterInstancesGetUpgradeProfileOptionalParams)
     uid: >-
       @azure/arm-hybridcontainerservice.ProvisionedClusterInstances.getUpgradeProfile
     package: '@azure/arm-hybridcontainerservice'
-    summary: Gets the upgrade profile of a provisioned cluster instance.
+    summary: Gets the upgrade profile of a provisioned cluster
     remarks: ''
     isDeprecated: false
     syntax:
@@ -331,7 +331,7 @@ methods:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -349,21 +349,21 @@ methods:
     uid: '@azure/arm-hybridcontainerservice.ProvisionedClusterInstances.list'
     package: '@azure/arm-hybridcontainerservice'
     summary: >-
-      Gets the Hybrid AKS provisioned cluster instances associated with the
-      connected cluster
+      Lists the ProvisionedClusterInstance resource associated with the
+      ConnectedCluster
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         function list(connectedClusterResourceUri: string, options?:
         ProvisionedClusterInstancesListOptionalParams):
-        PagedAsyncIterableIterator<ProvisionedClusters, ProvisionedClusters[],
+        PagedAsyncIterableIterator<ProvisionedCluster, ProvisionedCluster[],
         PageSettings>
       parameters:
         - id: connectedClusterResourceUri
           type: string
           description: |-
-            The fully qualified Azure Resource manager identifier of the
+            The fully qualified Azure Resource Manager identifier of the
                                                connected cluster resource.
         - id: options
           type: >-
@@ -375,6 +375,6 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-hybridcontainerservice.ProvisionedClusters" />, <xref
-          uid="@azure/arm-hybridcontainerservice.ProvisionedClusters" />[],
+          uid="@azure/arm-hybridcontainerservice.ProvisionedCluster" />, <xref
+          uid="@azure/arm-hybridcontainerservice.ProvisionedCluster" />[],
           PageSettings&gt;

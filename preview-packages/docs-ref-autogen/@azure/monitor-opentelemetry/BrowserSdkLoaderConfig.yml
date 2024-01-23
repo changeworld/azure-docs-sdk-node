@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: BrowserSdkLoaderConfig
+uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderConfig'
+package: '@azure/monitor-opentelemetry'
+summary: Browser SDK Loader Configuration interface
+fullName: BrowserSdkLoaderConfig
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: cfg
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderConfig.cfg'
+    package: '@azure/monitor-opentelemetry'
+    summary: >-
+      The configuration passed to the Application Insights SDK during
+      initialization
+    fullName: cfg
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'cfg: string'
+      return:
+        description: ''
+        type: string
+  - name: crossOrigin
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderConfig.crossOrigin'
+    package: '@azure/monitor-opentelemetry'
+    summary: >-
+      By including this setting, the script tag added to download the SDK will
+      include the crossOrigin attribute with this string value
+    fullName: crossOrigin
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'crossOrigin?: string'
+      return:
+        description: ''
+        type: string
+  - name: ld
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderConfig.ld'
+    package: '@azure/monitor-opentelemetry'
+    summary: Defines the load delay to wait before attempting to load the SDK
+    fullName: ld
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ld?: number'
+      return:
+        description: ''
+        type: number
+  - name: name
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderConfig.name'
+    package: '@azure/monitor-opentelemetry'
+    summary: The global name for the initialized SDK
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: onInit
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderConfig.onInit'
+    package: '@azure/monitor-opentelemetry'
+    summary: >-
+      This callback function which is called after the main SDK script has been
+      successfully loaded and initialized from the CDN (based on the src value),
+      it is passed a reference to the sdk instance that it is being called for
+      and it is also called before the first initial page view
+    fullName: onInit
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onInit?: string'
+      return:
+        description: ''
+        type: string
+  - name: src
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderConfig.src'
+    package: '@azure/monitor-opentelemetry'
+    summary: The full URL for where to load the SDK from
+    fullName: src
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'src: string'
+      return:
+        description: ''
+        type: string
+  - name: useXhr
+    uid: '@azure/monitor-opentelemetry.BrowserSdkLoaderConfig.useXhr'
+    package: '@azure/monitor-opentelemetry'
+    summary: This setting is used only for reporting SDK load failures
+    fullName: useXhr
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'useXhr?: boolean'
+      return:
+        description: ''
+        type: boolean
