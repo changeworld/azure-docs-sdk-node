@@ -1,12 +1,12 @@
 ---
-title: Azure Relay modules for JavaScript
-description: Reference for Azure Relay modules for JavaScript
-ms.date: 07/18/2017
+title: Azure Relay SDK for JavaScript
+description: Reference for Azure Relay SDK for JavaScript
+ms.date: 01/23/2024
 ms.topic: reference
-ms.devlang: nodejs
+ms.devlang: javascript
 ms.service: service-bus-relay
-manager: timlt
 ms.technology: azure
+manager: timlt
 ---
 # Azure Relay modules for JavaScript
 
@@ -29,4 +29,3 @@ npm install @azure/arm-relay
 * Examples for using this module in Node.js as well as browser applications can be found in the [README for the module](https://www.npmjs.com/package/@azure/arm-relay)
 
 * For more code samples that use various Azure packages, explore the [JavaScript samples](https://docs.microsoft.com/samples/browse/?languages=javascript).
-

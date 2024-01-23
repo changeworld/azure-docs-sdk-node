@@ -1206,6 +1206,10 @@
       href: ~/docs-ref-services/{moniker}/identity-readme.md
       children:
       - '@azure/identity'
+    - name: Azure Identity Broker
+      href: ~/docs-ref-services/{moniker}/identity-broker-readme.md
+      children:
+      - '@azure/identity-broker'
     - name: Token Cache Persistence Plugin
       href: ~/docs-ref-services/{moniker}/identity-cache-persistence-readme.md
       children:
@@ -1264,6 +1268,10 @@
       href: ~/docs-ref-services/{moniker}/iot-device-update-readme.md
       children:
       - '@azure/iot-device-update'
+    - name: IoT Models Repository
+      href: ~/docs-ref-services/{moniker}/iot-modelsrepository-readme.md
+      children:
+      - '@azure/iot-modelsrepository'
     - name: IoT Hub - IoT Common
       href: ~/docs-ref-services/{moniker}/iot-common-readme.md
       children:
@@ -1910,7 +1918,7 @@
         href: ~/docs-ref-services/{moniker}/arm-portal-readme.md
         children:
         - '@azure/arm-portal'
-  - name: PostgreSQL
+  - name: Postgresql
     href: ~/docs-ref-services/{moniker}/postgresql.md
     landingPageType: Service
     items:
