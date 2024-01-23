@@ -1,0 +1,14 @@
+{
+  "Name": "@azure/arm-labservices",
+  "Version": "3.1.1-alpha.20240119.1",
+  "DevVersion": "3.1.1-alpha.20240123.1",
+  "DirectoryPath": "sdk/labservices/arm-labservices",
+  "ServiceDirectory": "labservices",
+  "ReadMePath": "sdk/labservices/arm-labservices/README.md",
+  "ChangeLogPath": "sdk/labservices/arm-labservices/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-arm-labservices",
+  "ReleaseStatus": "Unreleased"
+}
