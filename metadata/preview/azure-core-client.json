@@ -1,0 +1,14 @@
+{
+  "Name": "@azure/core-client",
+  "Version": "1.7.4-alpha.20240108.2",
+  "DevVersion": "1.7.4-alpha.20240123.1",
+  "DirectoryPath": "sdk/core/core-client",
+  "ServiceDirectory": "core",
+  "ReadMePath": "sdk/core/core-client/README.md",
+  "ChangeLogPath": "sdk/core/core-client/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-core-client",
+  "ReleaseStatus": "Unreleased"
+}
