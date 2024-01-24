@@ -13,7 +13,7 @@ methods:
       VirtualNetworksCreateOrUpdateOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.VirtualNetworks.beginCreateOrUpdate'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Puts the Hybrid AKS virtual network
+    summary: Creates or updates the virtual network resource
     remarks: ''
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ methods:
           description: Parameter for the name of the virtual network
         - id: virtualNetworks
           type: <xref uid="@azure/arm-hybridcontainerservice.VirtualNetwork" />
-          description: The virtualNetworks resource definition.
+          description: Virtual Network resource definition
         - id: options
           type: >-
             <xref
@@ -51,7 +51,7 @@ methods:
     uid: >-
       @azure/arm-hybridcontainerservice.VirtualNetworks.beginCreateOrUpdateAndWait
     package: '@azure/arm-hybridcontainerservice'
-    summary: Puts the Hybrid AKS virtual network
+    summary: Creates or updates the virtual network resource
     remarks: ''
     isDeprecated: false
     syntax:
@@ -68,7 +68,7 @@ methods:
           description: Parameter for the name of the virtual network
         - id: virtualNetworks
           type: <xref uid="@azure/arm-hybridcontainerservice.VirtualNetwork" />
-          description: The virtualNetworks resource definition.
+          description: Virtual Network resource definition
         - id: options
           type: >-
             <xref
@@ -83,7 +83,7 @@ methods:
   - name: beginDelete(string, string, VirtualNetworksDeleteOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.VirtualNetworks.beginDelete'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Deletes the Hybrid AKS virtual network
+    summary: Deletes the specified virtual network resource
     remarks: ''
     isDeprecated: false
     syntax:
@@ -116,7 +116,7 @@ methods:
   - name: beginDeleteAndWait(string, string, VirtualNetworksDeleteOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.VirtualNetworks.beginDeleteAndWait'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Deletes the Hybrid AKS virtual network
+    summary: Deletes the specified virtual network resource
     remarks: ''
     isDeprecated: false
     syntax:
@@ -149,7 +149,7 @@ methods:
       VirtualNetworksUpdateOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.VirtualNetworks.beginUpdate'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Patches the Hybrid AKS virtual network
+    summary: Patches the virtual network resource
     remarks: ''
     isDeprecated: false
     syntax:
@@ -170,7 +170,7 @@ methods:
           type: >-
             <xref uid="@azure/arm-hybridcontainerservice.VirtualNetworksPatch"
             />
-          description: The virtualNetworks resource patch definition.
+          description: Virtual Network resource patch definition
         - id: options
           type: >-
             <xref
@@ -188,7 +188,7 @@ methods:
       VirtualNetworksUpdateOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.VirtualNetworks.beginUpdateAndWait'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Patches the Hybrid AKS virtual network
+    summary: Patches the virtual network resource
     remarks: ''
     isDeprecated: false
     syntax:
@@ -207,7 +207,7 @@ methods:
           type: >-
             <xref uid="@azure/arm-hybridcontainerservice.VirtualNetworksPatch"
             />
-          description: The virtualNetworks resource patch definition.
+          description: Virtual Network resource patch definition
         - id: options
           type: >-
             <xref
@@ -224,7 +224,7 @@ methods:
       VirtualNetworksListByResourceGroupOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.VirtualNetworks.listByResourceGroup'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Lists the Hybrid AKS virtual networks by resource group
+    summary: Lists the virtual networks in the specified resource group
     remarks: ''
     isDeprecated: false
     syntax:
@@ -253,7 +253,7 @@ methods:
   - name: listBySubscription(VirtualNetworksListBySubscriptionOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.VirtualNetworks.listBySubscription'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Lists the Hybrid AKS virtual networks by subscription
+    summary: Lists the virtual networks in the specified subscription
     remarks: ''
     isDeprecated: false
     syntax:
@@ -279,7 +279,7 @@ methods:
   - name: retrieve(string, string, VirtualNetworksRetrieveOptionalParams)
     uid: '@azure/arm-hybridcontainerservice.VirtualNetworks.retrieve'
     package: '@azure/arm-hybridcontainerservice'
-    summary: Gets the Hybrid AKS virtual network
+    summary: Gets the specified virtual network resource
     remarks: ''
     isDeprecated: false
     syntax:

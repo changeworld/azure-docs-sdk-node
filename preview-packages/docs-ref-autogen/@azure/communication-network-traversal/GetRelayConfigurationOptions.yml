@@ -29,10 +29,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'routeType?: RouteType'
+      content: 'routeType?: string'
       return:
         description: ''
-        type: <xref uid="@azure/communication-network-traversal.RouteType" />
+        type: string
   - name: ttl
     uid: '@azure/communication-network-traversal.GetRelayConfigurationOptions.ttl'
     package: '@azure/communication-network-traversal'
@@ -60,6 +60,23 @@ inheritedProperties:
         description: ''
         type: AbortSignalLike
     inheritanceDescription: <b>Inherited From</b> OperationOptions.abortSignal
+  - name: onResponse
+    uid: >-
+      @azure/communication-network-traversal.GetRelayConfigurationOptions.onResponse
+    package: '@azure/communication-network-traversal'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.onResponse
   - name: requestOptions
     uid: >-
       @azure/communication-network-traversal.GetRelayConfigurationOptions.requestOptions
@@ -74,6 +91,20 @@ inheritedProperties:
         description: ''
         type: OperationRequestOptions
     inheritanceDescription: <b>Inherited From</b> OperationOptions.requestOptions
+  - name: serializerOptions
+    uid: >-
+      @azure/communication-network-traversal.GetRelayConfigurationOptions.serializerOptions
+    package: '@azure/communication-network-traversal'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.serializerOptions
   - name: tracingOptions
     uid: >-
       @azure/communication-network-traversal.GetRelayConfigurationOptions.tracingOptions
