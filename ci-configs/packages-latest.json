@@ -1,8 +1,8 @@
 {
   "target_repo": {
-    "folder": "./",
+    "branch": "smoke-test",
     "url": "https://github.com/MicrosoftDocs/azure-docs-sdk-node",
-    "branch": "smoke-test"
+    "folder": "./"
   },
   "source_repos": [],
   "npm_package_sources": [
