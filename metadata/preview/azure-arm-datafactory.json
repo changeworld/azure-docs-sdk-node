@@ -1,0 +1,14 @@
+{
+  "Name": "@azure/arm-datafactory",
+  "Version": "12.0.1-alpha.20240118.1",
+  "DevVersion": "12.0.1-alpha.20240124.1",
+  "DirectoryPath": "sdk/datafactory/arm-datafactory",
+  "ServiceDirectory": "datafactory",
+  "ReadMePath": "sdk/datafactory/arm-datafactory/README.md",
+  "ChangeLogPath": "sdk/datafactory/arm-datafactory/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-arm-datafactory",
+  "ReleaseStatus": "Unreleased"
+}
