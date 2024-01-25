@@ -38,9 +38,11 @@ interfaces:
   - '@azure/arm-quota.QuotaProperties'
   - '@azure/arm-quota.QuotaRequestDetails'
   - '@azure/arm-quota.QuotaRequestDetailsList'
+  - '@azure/arm-quota.QuotaRequestOneResourceProperties'
   - '@azure/arm-quota.QuotaRequestOneResourceSubmitResponse'
   - '@azure/arm-quota.QuotaRequestProperties'
   - '@azure/arm-quota.QuotaRequestStatus'
+  - '@azure/arm-quota.QuotaRequestStatusDetails'
   - '@azure/arm-quota.QuotaRequestStatusGetOptionalParams'
   - '@azure/arm-quota.QuotaRequestStatusListNextOptionalParams'
   - '@azure/arm-quota.QuotaRequestStatusListOptionalParams'
@@ -85,8 +87,8 @@ functions:
     uid: '@azure/arm-quota.getContinuationToken'
     package: '@azure/arm-quota'
     summary: |-
-      Given a result page from a pageable operation, returns a
-      continuation token that can be used to begin paging from
+      Given the last `.value` produced by the `byPage` iterator,
+      returns a continuation token that can be used to begin paging from
       that point later.
     remarks: ''
     isDeprecated: false
@@ -95,7 +97,11 @@ functions:
       parameters:
         - id: page
           type: unknown
-          description: A result object from calling .byPage() on a paged operation.
+          description: >-
+            An object from accessing `value` on the IteratorResult from a
+            `byPage` iterator.
       return:
-        description: The continuation token that can be passed into byPage().
+        description: >-
+          The continuation token that can be passed into byPage() during future
+          calls.
         type: string | undefined

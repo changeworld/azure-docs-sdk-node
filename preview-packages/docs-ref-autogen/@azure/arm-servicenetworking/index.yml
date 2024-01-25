@@ -14,9 +14,11 @@ classes:
 interfaces:
   - '@azure/arm-servicenetworking.Association'
   - '@azure/arm-servicenetworking.AssociationListResult'
+  - '@azure/arm-servicenetworking.AssociationProperties'
   - '@azure/arm-servicenetworking.AssociationSubnet'
   - '@azure/arm-servicenetworking.AssociationSubnetUpdate'
   - '@azure/arm-servicenetworking.AssociationUpdate'
+  - '@azure/arm-servicenetworking.AssociationUpdateProperties'
   - '@azure/arm-servicenetworking.AssociationsInterface'
   - '@azure/arm-servicenetworking.AssociationsInterfaceCreateOrUpdateHeaders'
   - >-
@@ -34,6 +36,7 @@ interfaces:
   - '@azure/arm-servicenetworking.ErrorResponse'
   - '@azure/arm-servicenetworking.Frontend'
   - '@azure/arm-servicenetworking.FrontendListResult'
+  - '@azure/arm-servicenetworking.FrontendProperties'
   - '@azure/arm-servicenetworking.FrontendUpdate'
   - '@azure/arm-servicenetworking.FrontendsInterface'
   - '@azure/arm-servicenetworking.FrontendsInterfaceCreateOrUpdateHeaders'
@@ -75,6 +78,7 @@ interfaces:
     @azure/arm-servicenetworking.TrafficControllerInterfaceListBySubscriptionOptionalParams
   - '@azure/arm-servicenetworking.TrafficControllerInterfaceUpdateOptionalParams'
   - '@azure/arm-servicenetworking.TrafficControllerListResult'
+  - '@azure/arm-servicenetworking.TrafficControllerProperties'
   - '@azure/arm-servicenetworking.TrafficControllerUpdate'
 typeAliases:
   - '@azure/arm-servicenetworking.ActionType'

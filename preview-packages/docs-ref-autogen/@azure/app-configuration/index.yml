@@ -54,7 +54,6 @@ interfaces:
   - '@azure/app-configuration.UpdateSnapshotResponse'
 typeAliases:
   - '@azure/app-configuration.AddConfigurationSettingParam'
-  - '@azure/app-configuration.AppConfigurationApiVersion'
   - '@azure/app-configuration.ConfigurationSetting'
   - '@azure/app-configuration.ConfigurationSettingParam'
   - '@azure/app-configuration.ConfigurationSettingResponse'

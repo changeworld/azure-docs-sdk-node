@@ -22,13 +22,39 @@ properties:
         description: ''
         type: string
 inheritedProperties:
+  - name: additionalPolicies
+    uid: >-
+      @azure/mixed-reality-authentication.MixedRealityStsClientOptions.additionalPolicies
+    package: '@azure/mixed-reality-authentication'
+    summary: Additional policies to include in the HTTP pipeline.
+    fullName: additionalPolicies
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'additionalPolicies?: AdditionalPolicyConfig[]'
+      return:
+        description: ''
+        type: AdditionalPolicyConfig[]
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.additionalPolicies
+  - name: allowInsecureConnection
+    uid: >-
+      @azure/mixed-reality-authentication.MixedRealityStsClientOptions.allowInsecureConnection
+    package: '@azure/mixed-reality-authentication'
+    summary: Set to true if the request is sent over HTTP instead of HTTPS
+    fullName: allowInsecureConnection
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'allowInsecureConnection?: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.allowInsecureConnection
   - name: httpClient
     uid: >-
       @azure/mixed-reality-authentication.MixedRealityStsClientOptions.httpClient
     package: '@azure/mixed-reality-authentication'
-    summary: |-
-      The HttpClient implementation to use for outgoing HTTP requests.  Defaults
-      to DefaultHttpClient.
+    summary: The HttpClient that will be used to send HTTP requests.
     fullName: httpClient
     remarks: ''
     isDeprecated: false
@@ -37,23 +63,7 @@ inheritedProperties:
       return:
         description: ''
         type: HttpClient
-    inheritanceDescription: <b>Inherited From</b> PipelineOptions.httpClient
-  - name: keepAliveOptions
-    uid: >-
-      @azure/mixed-reality-authentication.MixedRealityStsClientOptions.keepAliveOptions
-    package: '@azure/mixed-reality-authentication'
-    summary: |-
-      Options for how HTTP connections should be maintained for future
-      requests.
-    fullName: keepAliveOptions
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'keepAliveOptions?: KeepAliveOptions'
-      return:
-        description: ''
-        type: KeepAliveOptions
-    inheritanceDescription: <b>Inherited From</b> PipelineOptions.keepAliveOptions
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.httpClient
   - name: proxyOptions
     uid: >-
       @azure/mixed-reality-authentication.MixedRealityStsClientOptions.proxyOptions
@@ -67,7 +77,7 @@ inheritedProperties:
       return:
         description: ''
         type: ProxySettings
-    inheritanceDescription: <b>Inherited From</b> PipelineOptions.proxyOptions
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.proxyOptions
   - name: redirectOptions
     uid: >-
       @azure/mixed-reality-authentication.MixedRealityStsClientOptions.redirectOptions
@@ -77,11 +87,11 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'redirectOptions?: RedirectOptions'
+      content: 'redirectOptions?: RedirectPolicyOptions'
       return:
         description: ''
-        type: RedirectOptions
-    inheritanceDescription: <b>Inherited From</b> PipelineOptions.redirectOptions
+        type: RedirectPolicyOptions
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.redirectOptions
   - name: retryOptions
     uid: >-
       @azure/mixed-reality-authentication.MixedRealityStsClientOptions.retryOptions
@@ -91,11 +101,41 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'retryOptions?: RetryOptions'
+      content: 'retryOptions?: PipelineRetryOptions'
       return:
         description: ''
-        type: RetryOptions
-    inheritanceDescription: <b>Inherited From</b> PipelineOptions.retryOptions
+        type: PipelineRetryOptions
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.retryOptions
+  - name: telemetryOptions
+    uid: >-
+      @azure/mixed-reality-authentication.MixedRealityStsClientOptions.telemetryOptions
+    package: '@azure/mixed-reality-authentication'
+    summary: >-
+      Options for setting common telemetry and tracing info to outgoing
+      requests.
+    fullName: telemetryOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'telemetryOptions?: TelemetryOptions'
+      return:
+        description: ''
+        type: TelemetryOptions
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.telemetryOptions
+  - name: tlsOptions
+    uid: >-
+      @azure/mixed-reality-authentication.MixedRealityStsClientOptions.tlsOptions
+    package: '@azure/mixed-reality-authentication'
+    summary: Options for configuring TLS authentication
+    fullName: tlsOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tlsOptions?: TlsSettings'
+      return:
+        description: ''
+        type: TlsSettings
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.tlsOptions
   - name: userAgentOptions
     uid: >-
       @azure/mixed-reality-authentication.MixedRealityStsClientOptions.userAgentOptions
@@ -105,9 +145,9 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'userAgentOptions?: UserAgentOptions'
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
       return:
         description: ''
-        type: UserAgentOptions
-    inheritanceDescription: <b>Inherited From</b> PipelineOptions.userAgentOptions
-extends: PipelineOptions
+        type: UserAgentPolicyOptions
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.userAgentOptions
+extends: CommonClientOptions

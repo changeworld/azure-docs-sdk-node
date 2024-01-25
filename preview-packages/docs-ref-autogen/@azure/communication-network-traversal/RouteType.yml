@@ -2,9 +2,19 @@
 name: RouteType
 uid: '@azure/communication-network-traversal.RouteType'
 package: '@azure/communication-network-traversal'
-summary: Defines values for RouteType.
+summary: >-
+  Defines values for RouteType. \
+
+  [KnownRouteType](xref:@azure/communication-network-traversal.KnownRouteType)
+  can be used interchangeably with RouteType,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **any** \
+
+  **nearest**
 fullName: RouteType
 remarks: ''
 isDeprecated: false
 syntax: |
-  type RouteType = "any" | "nearest"
+  type RouteType = string

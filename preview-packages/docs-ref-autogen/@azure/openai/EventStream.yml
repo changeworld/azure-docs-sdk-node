@@ -149,7 +149,7 @@ inheritedMethods:
       return:
         description: ''
         type: PromiseLike&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> AsyncDisposable.__@asyncDispose@321
+    inheritanceDescription: <b>Inherited From</b> AsyncDisposable.__@asyncDispose@323
   - name: '[asyncIterator]()'
     uid: '@azure/openai.EventStream.[asyncIterator]'
     package: '@azure/openai'
@@ -161,5 +161,5 @@ inheritedMethods:
       return:
         description: ''
         type: AsyncIterator&lt;T, any, undefined&gt;
-    inheritanceDescription: <b>Inherited From</b> AsyncIterable.__@asyncIterator@319
+    inheritanceDescription: <b>Inherited From</b> AsyncIterable.__@asyncIterator@321
 extends: ReadableStream&lt;T&gt;,AsyncIterable&lt;T&gt;,AsyncDisposable
