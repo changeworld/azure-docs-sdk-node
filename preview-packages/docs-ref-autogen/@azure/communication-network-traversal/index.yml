@@ -3,6 +3,8 @@ uid: '@azure/communication-network-traversal'
 name: '@azure/communication-network-traversal'
 summary: ''
 type: package
+enums:
+  - '@azure/communication-network-traversal.KnownRouteType'
 classes:
   - '@azure/communication-network-traversal.CommunicationRelayClient'
 interfaces:

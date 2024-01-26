@@ -508,6 +508,40 @@ properties:
         type: >-
           <xref uid="@azure/eventgrid.AppConfigurationKeyValueModifiedEventData"
           />
+  - name: Microsoft.AppConfiguration.SnapshotCreated
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.AppConfiguration.SnapshotCreated
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.AppConfiguration.SnapshotCreated" event.
+    fullName: Microsoft.AppConfiguration.SnapshotCreated
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.AppConfiguration.SnapshotCreated:
+        AppConfigurationSnapshotEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AppConfigurationSnapshotEventData" />
+  - name: Microsoft.AppConfiguration.SnapshotModified
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.AppConfiguration.SnapshotModified
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.AppConfiguration.SnapshotModified" event.
+    fullName: Microsoft.AppConfiguration.SnapshotModified
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.AppConfiguration.SnapshotModified:
+        AppConfigurationSnapshotEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AppConfigurationSnapshotEventData" />
   - name: Microsoft.Communication.ChatMessageDeleted
     uid: >-
       @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.ChatMessageDeleted
@@ -813,6 +847,363 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/eventgrid.AcsRecordingFileStatusUpdatedEventData" />
+  - name: Microsoft.Communication.RouterJobCancelled
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobCancelled
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobCancelled" event.
+    fullName: Microsoft.Communication.RouterJobCancelled
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobCancelled:
+        AcsRouterJobCancelledEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobCancelledEventData" />
+  - name: Microsoft.Communication.RouterJobClassificationFailed
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobClassificationFailed
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobClassificationFailed" event.
+    fullName: Microsoft.Communication.RouterJobClassificationFailed
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobClassificationFailed:
+        AcsRouterJobClassificationFailedEventData
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/eventgrid.AcsRouterJobClassificationFailedEventData"
+          />
+  - name: Microsoft.Communication.RouterJobClassified
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobClassified
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobClassified" event.
+    fullName: Microsoft.Communication.RouterJobClassified
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobClassified:
+        AcsRouterJobClassifiedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobClassifiedEventData" />
+  - name: Microsoft.Communication.RouterJobClosed
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobClosed
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobClosed" event.
+    fullName: Microsoft.Communication.RouterJobClosed
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'Microsoft.Communication.RouterJobClosed: AcsRouterJobClosedEventData'
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobClosedEventData" />
+  - name: Microsoft.Communication.RouterJobCompleted
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobCompleted
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobCompleted" event.
+    fullName: Microsoft.Communication.RouterJobCompleted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobCompleted:
+        AcsRouterJobCompletedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobCompletedEventData" />
+  - name: Microsoft.Communication.RouterJobDeleted
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobDeleted
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobDeleted" event.
+    fullName: Microsoft.Communication.RouterJobDeleted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'Microsoft.Communication.RouterJobDeleted: AcsRouterJobDeletedEventData'
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobDeletedEventData" />
+  - name: Microsoft.Communication.RouterJobExceptionTriggered
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobExceptionTriggered
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobExceptionTriggered" event.
+    fullName: Microsoft.Communication.RouterJobExceptionTriggered
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobExceptionTriggered:
+        AcsRouterJobExceptionTriggeredEventData
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/eventgrid.AcsRouterJobExceptionTriggeredEventData"
+          />
+  - name: Microsoft.Communication.RouterJobQueued
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobQueued
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobQueued" event.
+    fullName: Microsoft.Communication.RouterJobQueued
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'Microsoft.Communication.RouterJobQueued: AcsRouterJobQueuedEventData'
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobQueuedEventData" />
+  - name: Microsoft.Communication.RouterJobReceived
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobReceived
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobReceived" event.
+    fullName: Microsoft.Communication.RouterJobReceived
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'Microsoft.Communication.RouterJobReceived: AcsRouterJobReceivedEventData'
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobReceivedEventData" />
+  - name: Microsoft.Communication.RouterJobSchedulingFailed
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobSchedulingFailed
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobSchedulingFailed" event.
+    fullName: Microsoft.Communication.RouterJobSchedulingFailed
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobSchedulingFailed:
+        AcsRouterJobSchedulingFailedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobSchedulingFailedEventData" />
+  - name: Microsoft.Communication.RouterJobUnassigned
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobUnassigned
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobUnassigned" event.
+    fullName: Microsoft.Communication.RouterJobUnassigned
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobUnassigned:
+        AcsRouterJobUnassignedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterJobUnassignedEventData" />
+  - name: Microsoft.Communication.RouterJobWaitingForActivation
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobWaitingForActivation
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobWaitingForActivation" event.
+    fullName: Microsoft.Communication.RouterJobWaitingForActivation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobWaitingForActivation:
+        AcsRouterJobWaitingForActivationEventData
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/eventgrid.AcsRouterJobWaitingForActivationEventData"
+          />
+  - name: Microsoft.Communication.RouterJobWorkerSelectorsExpire
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterJobWorkerSelectorsExpire
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterJobWorkerSelectorsExpire" event.
+    fullName: Microsoft.Communication.RouterJobWorkerSelectorsExpire
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterJobWorkerSelectorsExpire:
+        AcsRouterJobWorkerSelectorsExpiredEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.AcsRouterJobWorkerSelectorsExpiredEventData" />
+  - name: Microsoft.Communication.RouterWorkerDeleted
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterWorkerDeleted
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterWorkerDeleted" event.
+    fullName: Microsoft.Communication.RouterWorkerDeleted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterWorkerDeleted:
+        AcsRouterWorkerDeletedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterWorkerDeletedEventData" />
+  - name: Microsoft.Communication.RouterWorkerDeregistered
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterWorkerDeregistered
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterWorkerDeregistered" event.
+    fullName: Microsoft.Communication.RouterWorkerDeregistered
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterWorkerDeregistered:
+        AcsRouterWorkerDeregisteredEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterWorkerDeregisteredEventData" />
+  - name: Microsoft.Communication.RouterWorkerOfferAccepted
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterWorkerOfferAccepted
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterWorkerOfferAccepted" event.
+    fullName: Microsoft.Communication.RouterWorkerOfferAccepted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterWorkerOfferAccepted:
+        AcsRouterWorkerOfferAcceptedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterWorkerOfferAcceptedEventData" />
+  - name: Microsoft.Communication.RouterWorkerOfferDeclined
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterWorkerOfferDeclined
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterWorkerOfferDeclined" event.
+    fullName: Microsoft.Communication.RouterWorkerOfferDeclined
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterWorkerOfferDeclined:
+        AcsRouterWorkerOfferDeclinedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterWorkerOfferDeclinedEventData" />
+  - name: Microsoft.Communication.RouterWorkerOfferExpired
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterWorkerOfferExpired
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterWorkerOfferExpired" event.
+    fullName: Microsoft.Communication.RouterWorkerOfferExpired
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterWorkerOfferExpired:
+        AcsRouterWorkerOfferExpiredEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterWorkerOfferExpiredEventData" />
+  - name: Microsoft.Communication.RouterWorkerOfferIssued
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterWorkerOfferIssued
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterWorkerOfferIssued" event.
+    fullName: Microsoft.Communication.RouterWorkerOfferIssued
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterWorkerOfferIssued:
+        AcsRouterWorkerOfferIssuedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterWorkerOfferIssuedEventData" />
+  - name: Microsoft.Communication.RouterWorkerOfferRevoked
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterWorkerOfferRevoked
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterWorkerOfferRevoked" event.
+    fullName: Microsoft.Communication.RouterWorkerOfferRevoked
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterWorkerOfferRevoked:
+        AcsRouterWorkerOfferRevokedEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterWorkerOfferRevokedEventData" />
+  - name: Microsoft.Communication.RouterWorkerRegistered
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.RouterWorkerRegistered
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.Communication.RouterWorkerRegistered" event.
+    fullName: Microsoft.Communication.RouterWorkerRegistered
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.Communication.RouterWorkerRegistered:
+        AcsRouterWorkerRegisteredEventData
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.AcsRouterWorkerRegisteredEventData" />
   - name: Microsoft.Communication.SMSDeliveryReportReceived
     uid: >-
       @azure/eventgrid.SystemEventNameToEventData.Microsoft.Communication.SMSDeliveryReportReceived
@@ -924,6 +1315,44 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/eventgrid.ContainerRegistryEventData" />
+  - name: Microsoft.ContainerService.ClusterSupportEnded
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ContainerService.ClusterSupportEnded
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ContainerService.ClusterSupportEnded" event.
+    fullName: Microsoft.ContainerService.ClusterSupportEnded
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ContainerService.ClusterSupportEnded:
+        ContainerServiceClusterSupportEventData
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/eventgrid.ContainerServiceClusterSupportEventData"
+          />
+  - name: Microsoft.ContainerService.ClusterSupportEnding
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ContainerService.ClusterSupportEnding
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ContainerService.ClusterSupportEnding" event.
+    fullName: Microsoft.ContainerService.ClusterSupportEnding
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ContainerService.ClusterSupportEnding:
+        ContainerServiceClusterSupportEventData
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/eventgrid.ContainerServiceClusterSupportEventData"
+          />
   - name: Microsoft.ContainerService.NewKubernetesVersionAvailable
     uid: >-
       @azure/eventgrid.SystemEventNameToEventData.Microsoft.ContainerService.NewKubernetesVersionAvailable
@@ -943,6 +1372,63 @@ properties:
         type: >-
           <xref
           uid="@azure/eventgrid.ContainerServiceNewKubernetesVersionAvailableEventData"
+          />
+  - name: Microsoft.ContainerService.NodePoolRollingFailed
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ContainerService.NodePoolRollingFailed
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ContainerService.NodePoolRollingFailed" event.
+    fullName: Microsoft.ContainerService.NodePoolRollingFailed
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ContainerService.NodePoolRollingFailed:
+        ContainerServiceNodePoolRollingEventData
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/eventgrid.ContainerServiceNodePoolRollingEventData"
+          />
+  - name: Microsoft.ContainerService.NodePoolRollingStarted
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ContainerService.NodePoolRollingStarted
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ContainerService.NodePoolRollingStarted" event.
+    fullName: Microsoft.ContainerService.NodePoolRollingStarted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ContainerService.NodePoolRollingStarted:
+        ContainerServiceNodePoolRollingEventData
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/eventgrid.ContainerServiceNodePoolRollingEventData"
+          />
+  - name: Microsoft.ContainerService.NodePoolRollingSucceeded
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ContainerService.NodePoolRollingSucceeded
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ContainerService.NodePoolRollingSucceeded" event.
+    fullName: Microsoft.ContainerService.NodePoolRollingSucceeded
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ContainerService.NodePoolRollingSucceeded:
+        ContainerServiceNodePoolRollingEventData
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/eventgrid.ContainerServiceNodePoolRollingEventData"
           />
   - name: Microsoft.DataBox.CopyCompleted
     uid: >-
@@ -1063,6 +1549,79 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/eventgrid.DeviceTelemetryEvent" />
+  - name: Microsoft.EventGrid.MQTTClientCreatedOrUpdated
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.EventGrid.MQTTClientCreatedOrUpdated
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.EventGrid.MQTTClientCreatedOrUpdated" event.
+    fullName: Microsoft.EventGrid.MQTTClientCreatedOrUpdated
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.EventGrid.MQTTClientCreatedOrUpdated:
+        EventGridMqttClientCreatedOrUpdatedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.EventGridMqttClientCreatedOrUpdatedEventData" />
+  - name: Microsoft.EventGrid.MQTTClientDeleted
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.EventGrid.MQTTClientDeleted
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.EventGrid.MQTTClientDeleted" event.
+    fullName: Microsoft.EventGrid.MQTTClientDeleted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'Microsoft.EventGrid.MQTTClientDeleted: EventGridMqttClientEventData'
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.EventGridMqttClientEventData" />
+  - name: Microsoft.EventGrid.MQTTClientSessionConnected
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.EventGrid.MQTTClientSessionConnected
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.EventGrid.MQTTClientSessionConnected" event.
+    fullName: Microsoft.EventGrid.MQTTClientSessionConnected
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.EventGrid.MQTTClientSessionConnected:
+        EventGridMqttClientSessionConnectedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.EventGridMqttClientSessionConnectedEventData" />
+  - name: Microsoft.EventGrid.MQTTClientSessionDisconnected
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.EventGrid.MQTTClientSessionDisconnected
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.EventGrid.MQTTClientSessionDisconnected" event.
+    fullName: Microsoft.EventGrid.MQTTClientSessionDisconnected
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.EventGrid.MQTTClientSessionDisconnected:
+        EventGridMqttClientSessionDisconnectedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.EventGridMqttClientSessionDisconnectedEventData"
+          />
   - name: Microsoft.EventGrid.SubscriptionDeletedEvent
     uid: >-
       @azure/eventgrid.SystemEventNameToEventData.Microsoft.EventGrid.SubscriptionDeletedEvent
@@ -1981,6 +2540,87 @@ properties:
         description: ''
         type: >-
           <xref uid="@azure/eventgrid.PolicyInsightsPolicyStateDeletedEventData"
+          />
+  - name: Microsoft.ResourceNotifications.HealthResources.AvailabilityStatusChanged
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ResourceNotifications.HealthResources.AvailabilityStatusChanged
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ResourceNotifications.HealthResources.AvailabilityStatusChanged"
+      event.
+    fullName: Microsoft.ResourceNotifications.HealthResources.AvailabilityStatusChanged
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ResourceNotifications.HealthResources.AvailabilityStatusChanged:
+        ResourceNotificationsResourceUpdatedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.ResourceNotificationsResourceUpdatedEventData"
+          />
+  - name: Microsoft.ResourceNotifications.HealthResources.ResourceAnnotated
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ResourceNotifications.HealthResources.ResourceAnnotated
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ResourceNotifications.HealthResources.ResourceAnnotated" event.
+    fullName: Microsoft.ResourceNotifications.HealthResources.ResourceAnnotated
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ResourceNotifications.HealthResources.ResourceAnnotated:
+        ResourceNotificationsResourceUpdatedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.ResourceNotificationsResourceUpdatedEventData"
+          />
+  - name: Microsoft.ResourceNotifications.Resources.CreatedOrUpdated
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ResourceNotifications.Resources.CreatedOrUpdated
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ResourceNotifications.Resources.CreatedOrUpdated" event.
+    fullName: Microsoft.ResourceNotifications.Resources.CreatedOrUpdated
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ResourceNotifications.Resources.CreatedOrUpdated:
+        ResourceNotificationsResourceUpdatedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.ResourceNotificationsResourceUpdatedEventData"
+          />
+  - name: Microsoft.ResourceNotifications.Resources.Deleted
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.ResourceNotifications.Resources.Deleted
+    package: '@azure/eventgrid'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.ResourceNotifications.Resources.Deleted" event.
+    fullName: Microsoft.ResourceNotifications.Resources.Deleted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.ResourceNotifications.Resources.Deleted:
+        ResourceNotificationsResourceDeletedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.ResourceNotificationsResourceDeletedEventData"
           />
   - name: Microsoft.Resources.ResourceActionCancel
     uid: >-

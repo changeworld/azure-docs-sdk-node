@@ -37,7 +37,24 @@ inheritedProperties:
       return:
         description: ''
         type: AbortSignalLike
-    inheritanceDescription: <b>Inherited From</b> coreHttp.OperationOptions.abortSignal
+    inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.abortSignal
+  - name: onResponse
+    uid: >-
+      @azure/synapse-monitoring.MonitoringGetSparkJobListOptionalParams.onResponse
+    package: '@azure/synapse-monitoring'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+    inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.onResponse
   - name: requestOptions
     uid: >-
       @azure/synapse-monitoring.MonitoringGetSparkJobListOptionalParams.requestOptions
@@ -51,7 +68,21 @@ inheritedProperties:
       return:
         description: ''
         type: OperationRequestOptions
-    inheritanceDescription: <b>Inherited From</b> coreHttp.OperationOptions.requestOptions
+    inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.requestOptions
+  - name: serializerOptions
+    uid: >-
+      @azure/synapse-monitoring.MonitoringGetSparkJobListOptionalParams.serializerOptions
+    package: '@azure/synapse-monitoring'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+    inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.serializerOptions
   - name: tracingOptions
     uid: >-
       @azure/synapse-monitoring.MonitoringGetSparkJobListOptionalParams.tracingOptions
@@ -65,5 +96,5 @@ inheritedProperties:
       return:
         description: ''
         type: OperationTracingOptions
-    inheritanceDescription: <b>Inherited From</b> coreHttp.OperationOptions.tracingOptions
+    inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.tracingOptions
 extends: OperationOptions
