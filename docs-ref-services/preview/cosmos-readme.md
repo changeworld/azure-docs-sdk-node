@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: javascript
 ms.service: cosmosdb
 ---
-# Azure Cosmos DB client library for JavaScript - version 4.0.1-alpha.20240118.2 
+# Azure Cosmos DB client library for JavaScript - version 4.0.1-alpha.20240126.3 
 /TypeScript
 
 [![latest npm badge](https://img.shields.io/npm/v/%40azure%2Fcosmos/latest.svg)][npm]
