@@ -18,12 +18,12 @@ methods:
       content: >-
         function beginCreate(resourceGroupName: string, organizationName:
         string, options?: OrganizationCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<OrganizationResource>,
+        Promise<SimplePollerLike<OperationState<OrganizationResource>,
         OrganizationResource>>
       parameters:
         - id: resourceGroupName
           type: string
-          description: Resource group name
+          description: The name of the resource group. The name is case insensitive.
         - id: organizationName
           type: string
           description: Organization resource name
@@ -33,7 +33,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-confluent.OrganizationResource" />&gt;, <xref
           uid="@azure/arm-confluent.OrganizationResource" />&gt;&gt;
   - name: beginCreateAndWait(string, string, OrganizationCreateOptionalParams)
@@ -50,7 +50,7 @@ methods:
       parameters:
         - id: resourceGroupName
           type: string
-          description: Resource group name
+          description: The name of the resource group. The name is case insensitive.
         - id: organizationName
           type: string
           description: Organization resource name
@@ -72,11 +72,11 @@ methods:
       content: >-
         function beginDelete(resourceGroupName: string, organizationName:
         string, options?: OrganizationDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
-          description: Resource group name
+          description: The name of the resource group. The name is case insensitive.
         - id: organizationName
           type: string
           description: Organization resource name
@@ -85,7 +85,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: beginDeleteAndWait(string, string, OrganizationDeleteOptionalParams)
     uid: '@azure/arm-confluent.Organization.beginDeleteAndWait'
     package: '@azure/arm-confluent'
@@ -99,7 +101,7 @@ methods:
       parameters:
         - id: resourceGroupName
           type: string
-          description: Resource group name
+          description: The name of the resource group. The name is case insensitive.
         - id: organizationName
           type: string
           description: Organization resource name
@@ -122,7 +124,7 @@ methods:
       parameters:
         - id: resourceGroupName
           type: string
-          description: Resource group name
+          description: The name of the resource group. The name is case insensitive.
         - id: organizationName
           type: string
           description: Organization resource name
@@ -149,7 +151,7 @@ methods:
       parameters:
         - id: resourceGroupName
           type: string
-          description: Resource group name
+          description: The name of the resource group. The name is case insensitive.
         - id: options
           type: >-
             <xref
@@ -201,7 +203,7 @@ methods:
       parameters:
         - id: resourceGroupName
           type: string
-          description: Resource group name
+          description: The name of the resource group. The name is case insensitive.
         - id: organizationName
           type: string
           description: Organization resource name

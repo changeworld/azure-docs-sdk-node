@@ -63,6 +63,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/communication-call-automation.ChannelAffinity" />[]
+  - name: pauseOnStart
+    uid: '@azure/communication-call-automation.StartRecordingOptions.pauseOnStart'
+    package: '@azure/communication-call-automation'
+    summary: Pause on start call recording option.
+    fullName: pauseOnStart
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pauseOnStart?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: recordingChannel
     uid: >-
       @azure/communication-call-automation.StartRecordingOptions.recordingChannel

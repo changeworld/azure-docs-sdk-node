@@ -180,30 +180,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cosmosdb.DatabaseAccounts" />
-  - name: dataTransferJobs
-    uid: '@azure/arm-cosmosdb.CosmosDBManagementClient.dataTransferJobs'
-    package: '@azure/arm-cosmosdb'
-    summary: ''
-    fullName: dataTransferJobs
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'dataTransferJobs: DataTransferJobs'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-cosmosdb.DataTransferJobs" />
-  - name: graphResources
-    uid: '@azure/arm-cosmosdb.CosmosDBManagementClient.graphResources'
-    package: '@azure/arm-cosmosdb'
-    summary: ''
-    fullName: graphResources
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'graphResources: GraphResources'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-cosmosdb.GraphResources" />
   - name: gremlinResources
     uid: '@azure/arm-cosmosdb.CosmosDBManagementClient.gremlinResources'
     package: '@azure/arm-cosmosdb'
@@ -228,18 +204,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cosmosdb.Locations" />
-  - name: mongoClusters
-    uid: '@azure/arm-cosmosdb.CosmosDBManagementClient.mongoClusters'
-    package: '@azure/arm-cosmosdb'
-    summary: ''
-    fullName: mongoClusters
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'mongoClusters: MongoClusters'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-cosmosdb.MongoClusters" />
   - name: mongoDBResources
     uid: '@azure/arm-cosmosdb.CosmosDBManagementClient.mongoDBResources'
     package: '@azure/arm-cosmosdb'

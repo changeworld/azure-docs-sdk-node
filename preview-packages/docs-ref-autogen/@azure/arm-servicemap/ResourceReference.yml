@@ -31,13 +31,13 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        kind: "ref:machine" | "ref:port" | "ref:machinewithhints" |
-        "ref:process" | "ref:clientgroup"
+        kind: "ref:clientgroup" | "ref:machine" | "ref:machinewithhints" |
+        "ref:port" | "ref:process"
       return:
         description: ''
         type: >-
-          "ref:machine" | "ref:port" | "ref:machinewithhints" | "ref:process" |
-          "ref:clientgroup"
+          "ref:clientgroup" | "ref:machine" | "ref:machinewithhints" |
+          "ref:port" | "ref:process"
   - name: name
     uid: '@azure/arm-servicemap.ResourceReference.name'
     package: '@azure/arm-servicemap'

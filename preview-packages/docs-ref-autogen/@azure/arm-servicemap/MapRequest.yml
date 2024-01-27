@@ -31,13 +31,13 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        kind: "map:single-machine-dependency" | "MultipleMachinesMapRequest" |
-        "map:machine-list-dependency" | "map:machine-group-dependency"
+        kind: "map:machine-group-dependency" | "map:machine-list-dependency" |
+        "map:single-machine-dependency" | "MultipleMachinesMapRequest"
       return:
         description: ''
         type: >-
-          "map:single-machine-dependency" | "MultipleMachinesMapRequest" |
-          "map:machine-list-dependency" | "map:machine-group-dependency"
+          "map:machine-group-dependency" | "map:machine-list-dependency" |
+          "map:single-machine-dependency" | "MultipleMachinesMapRequest"
   - name: startTime
     uid: '@azure/arm-servicemap.MapRequest.startTime'
     package: '@azure/arm-servicemap'

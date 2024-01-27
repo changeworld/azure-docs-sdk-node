@@ -29,3 +29,10 @@ syntax: |
     | ContinuousDtmfRecognitionStopped
     | SendDtmfTonesCompleted
     | SendDtmfTonesFailed
+    | CancelAddParticipantSucceeded
+    | CancelAddParticipantFailed
+    | TranscriptionStarted
+    | TranscriptionStopped
+    | TranscriptionUpdated
+    | TranscriptionResumed
+    | TranscriptionFailed
