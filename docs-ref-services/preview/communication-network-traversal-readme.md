@@ -1,13 +1,12 @@
 ---
 title: Azure Communication Network Traversal client library for JavaScript
 keywords: Azure, javascript, SDK, API, @azure/communication-network-traversal, communication
-ms.date: 03/11/2022
+ms.date: 01/30/2024
 ms.topic: reference
 ms.devlang: javascript
-ms.service: azure-communication-services
-ms.technology: azure
+ms.service: communication
 ---
-# Azure Communication Network Traversal client library for JavaScript - version 1.1.0-beta.1 
+# Azure Communication Network Traversal client library for JavaScript - version 1.1.0-alpha.20240129.1 
 
 
 Azure Communication Network Traversal is managing tokens for Azure Communication Services. 
@@ -19,7 +18,7 @@ It will provide TURN credentials to a user.
 ### Prerequisites
 
 - An [Azure subscription][azure_sub].
-- An existing Communication Services resource. If you need to create the resource, you can use the [Azure Portal][azure_portal], the[Azure PowerShell][azure_powershell], or the [Azure CLI][azure_cli].
+- An existing Communication Services resource. If you need to create the resource, you can use the [Azure Portal][azure_portal], the [Azure PowerShell][azure_powershell], or the [Azure CLI][azure_cli].
 
 ### Installing
 
@@ -122,21 +121,21 @@ const config = await relayClient.getRelayConfiguration(user, "nearest");
 ## Next steps
 
 Please take a look at the
-[samples](https://github.com/Azure/azure-sdk-for-js/blob/@azure/communication-network-traversal_1.1.0-beta.1/sdk/communication/communication-network-traversal/samples)
+[samples](https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/communication/communication-network-traversal/samples)
 directory for detailed examples on how to use this library.
 
 ## Contributing
 
-If you'd like to contribute to this library, please read the [contributing guide](https://github.com/Azure/azure-sdk-for-js/blob/@azure/communication-network-traversal_1.1.0-beta.1/CONTRIBUTING.md) to learn more about how to build and test the code.
+If you'd like to contribute to this library, please read the [contributing guide](https://github.com/Azure/azure-sdk-for-js/blob/main/CONTRIBUTING.md) to learn more about how to build and test the code.
 
 ## Related projects
 
 - [Microsoft Azure SDK for Javascript](https://github.com/Azure/azure-sdk-for-js)
 
-[azure_cli]: https://docs.microsoft.com/cli/azure
+[azure_cli]: /cli/azure
 [azure_sub]: https://azure.microsoft.com/free/
 [azure_portal]: https://portal.azure.com
-[azure_powershell]: https://docs.microsoft.com/powershell/module/az.communication/new-azcommunicationservice
+[azure_powershell]: /powershell/module/az.communication/new-azcommunicationservice
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-js)
 
