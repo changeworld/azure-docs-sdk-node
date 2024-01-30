@@ -1,0 +1,14 @@
+{
+  "Name": "@azure/arm-nginx",
+  "Version": "3.0.1-alpha.20240129.1",
+  "DevVersion": "3.0.1-alpha.20240130.1",
+  "DirectoryPath": "sdk/nginx/arm-nginx",
+  "ServiceDirectory": "nginx",
+  "ReadMePath": "sdk/nginx/arm-nginx/README.md",
+  "ChangeLogPath": "sdk/nginx/arm-nginx/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-arm-nginx",
+  "ReleaseStatus": "Unreleased"
+}
