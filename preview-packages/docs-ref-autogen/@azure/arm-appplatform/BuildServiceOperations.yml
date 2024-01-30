@@ -102,7 +102,8 @@ methods:
         function beginDeleteBuild(resourceGroupName: string, serviceName:
         string, buildServiceName: string, buildName: string, options?:
         BuildServiceDeleteBuildOptionalParams):
-        Promise<SimplePollerLike<OperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<BuildServiceDeleteBuildHeaders>,
+        BuildServiceDeleteBuildHeaders>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -128,8 +129,10 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
-          void&gt;&gt;
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
+          uid="@azure/arm-appplatform.BuildServiceDeleteBuildHeaders" />&gt;,
+          <xref uid="@azure/arm-appplatform.BuildServiceDeleteBuildHeaders"
+          />&gt;&gt;
   - name: >-
       beginDeleteBuildAndWait(string, string, string, string,
       BuildServiceDeleteBuildOptionalParams)
@@ -142,7 +145,8 @@ methods:
       content: >-
         function beginDeleteBuildAndWait(resourceGroupName: string, serviceName:
         string, buildServiceName: string, buildName: string, options?:
-        BuildServiceDeleteBuildOptionalParams): Promise<void>
+        BuildServiceDeleteBuildOptionalParams):
+        Promise<BuildServiceDeleteBuildHeaders>
       parameters:
         - id: resourceGroupName
           type: string
@@ -167,7 +171,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;void&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appplatform.BuildServiceDeleteBuildHeaders" />&gt;
   - name: >-
       createOrUpdateBuild(string, string, string, string, Build,
       BuildServiceCreateOrUpdateBuildOptionalParams)

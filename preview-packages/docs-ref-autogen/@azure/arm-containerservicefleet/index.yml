@@ -18,8 +18,6 @@ enums:
 classes:
   - '@azure/arm-containerservicefleet.ContainerServiceFleetClient'
 interfaces:
-  - '@azure/arm-containerservicefleet.APIServerAccessProfile'
-  - '@azure/arm-containerservicefleet.AgentProfile'
   - '@azure/arm-containerservicefleet.ContainerServiceFleetClientOptionalParams'
   - '@azure/arm-containerservicefleet.ErrorAdditionalInfo'
   - '@azure/arm-containerservicefleet.ErrorDetail'
@@ -27,7 +25,6 @@ interfaces:
   - '@azure/arm-containerservicefleet.Fleet'
   - '@azure/arm-containerservicefleet.FleetCredentialResult'
   - '@azure/arm-containerservicefleet.FleetCredentialResults'
-  - '@azure/arm-containerservicefleet.FleetHubProfile'
   - '@azure/arm-containerservicefleet.FleetListResult'
   - '@azure/arm-containerservicefleet.FleetMember'
   - '@azure/arm-containerservicefleet.FleetMemberListResult'

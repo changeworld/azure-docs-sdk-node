@@ -34,10 +34,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'routeType: RouteType'
+      content: 'routeType: string'
       return:
         description: ''
-        type: <xref uid="@azure/communication-network-traversal.RouteType" />
+        type: string
   - name: urls
     uid: '@azure/communication-network-traversal.CommunicationIceServer.urls'
     package: '@azure/communication-network-traversal'

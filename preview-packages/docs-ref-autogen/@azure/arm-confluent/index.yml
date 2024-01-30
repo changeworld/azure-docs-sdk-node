@@ -10,14 +10,43 @@ enums:
 classes:
   - '@azure/arm-confluent.ConfluentManagementClient'
 interfaces:
+  - '@azure/arm-confluent.Access'
+  - '@azure/arm-confluent.AccessInviteUserAccountModel'
+  - '@azure/arm-confluent.AccessInviteUserOptionalParams'
+  - '@azure/arm-confluent.AccessInvitedUserDetails'
+  - '@azure/arm-confluent.AccessListClusterSuccessResponse'
+  - '@azure/arm-confluent.AccessListClustersOptionalParams'
+  - '@azure/arm-confluent.AccessListEnvironmentsOptionalParams'
+  - '@azure/arm-confluent.AccessListEnvironmentsSuccessResponse'
+  - '@azure/arm-confluent.AccessListInvitationsOptionalParams'
+  - '@azure/arm-confluent.AccessListInvitationsSuccessResponse'
+  - '@azure/arm-confluent.AccessListRoleBindingsOptionalParams'
+  - '@azure/arm-confluent.AccessListRoleBindingsSuccessResponse'
+  - '@azure/arm-confluent.AccessListServiceAccountsOptionalParams'
+  - '@azure/arm-confluent.AccessListServiceAccountsSuccessResponse'
+  - '@azure/arm-confluent.AccessListUsersOptionalParams'
+  - '@azure/arm-confluent.AccessListUsersSuccessResponse'
+  - '@azure/arm-confluent.ClusterByokEntity'
+  - '@azure/arm-confluent.ClusterConfigEntity'
+  - '@azure/arm-confluent.ClusterEnvironmentEntity'
+  - '@azure/arm-confluent.ClusterNetworkEntity'
+  - '@azure/arm-confluent.ClusterRecord'
+  - '@azure/arm-confluent.ClusterSpecEntity'
+  - '@azure/arm-confluent.ClusterStatusEntity'
   - '@azure/arm-confluent.ConfluentAgreementResource'
   - '@azure/arm-confluent.ConfluentAgreementResourceListResponse'
+  - '@azure/arm-confluent.ConfluentListMetadata'
   - '@azure/arm-confluent.ConfluentManagementClientOptionalParams'
+  - '@azure/arm-confluent.EnvironmentRecord'
   - '@azure/arm-confluent.ErrorResponseBody'
+  - '@azure/arm-confluent.InvitationRecord'
+  - '@azure/arm-confluent.LinkOrganization'
+  - '@azure/arm-confluent.ListAccessRequestModel'
   - '@azure/arm-confluent.MarketplaceAgreements'
   - '@azure/arm-confluent.MarketplaceAgreementsCreateOptionalParams'
   - '@azure/arm-confluent.MarketplaceAgreementsListNextOptionalParams'
   - '@azure/arm-confluent.MarketplaceAgreementsListOptionalParams'
+  - '@azure/arm-confluent.MetadataEntity'
   - '@azure/arm-confluent.OfferDetail'
   - '@azure/arm-confluent.OperationDisplay'
   - '@azure/arm-confluent.OperationListResult'
@@ -38,11 +67,23 @@ interfaces:
   - '@azure/arm-confluent.OrganizationResourceUpdate'
   - '@azure/arm-confluent.OrganizationUpdateOptionalParams'
   - '@azure/arm-confluent.ResourceProviderDefaultErrorResponse'
+  - '@azure/arm-confluent.RoleBindingRecord'
+  - '@azure/arm-confluent.ServiceAccountRecord'
   - '@azure/arm-confluent.SystemData'
   - '@azure/arm-confluent.UserDetail'
+  - '@azure/arm-confluent.UserRecord'
+  - '@azure/arm-confluent.ValidationResponse'
   - '@azure/arm-confluent.Validations'
   - '@azure/arm-confluent.ValidationsValidateOrganizationOptionalParams'
+  - '@azure/arm-confluent.ValidationsValidateOrganizationV2OptionalParams'
 typeAliases:
+  - '@azure/arm-confluent.AccessInviteUserResponse'
+  - '@azure/arm-confluent.AccessListClustersResponse'
+  - '@azure/arm-confluent.AccessListEnvironmentsResponse'
+  - '@azure/arm-confluent.AccessListInvitationsResponse'
+  - '@azure/arm-confluent.AccessListRoleBindingsResponse'
+  - '@azure/arm-confluent.AccessListServiceAccountsResponse'
+  - '@azure/arm-confluent.AccessListUsersResponse'
   - '@azure/arm-confluent.CreatedByType'
   - '@azure/arm-confluent.MarketplaceAgreementsCreateResponse'
   - '@azure/arm-confluent.MarketplaceAgreementsListNextResponse'
@@ -59,13 +100,14 @@ typeAliases:
   - '@azure/arm-confluent.ProvisionState'
   - '@azure/arm-confluent.SaaSOfferStatus'
   - '@azure/arm-confluent.ValidationsValidateOrganizationResponse'
+  - '@azure/arm-confluent.ValidationsValidateOrganizationV2Response'
 functions:
   - name: getContinuationToken(unknown)
     uid: '@azure/arm-confluent.getContinuationToken'
     package: '@azure/arm-confluent'
     summary: |-
-      Given a result page from a pageable operation, returns a
-      continuation token that can be used to begin paging from
+      Given the last `.value` produced by the `byPage` iterator,
+      returns a continuation token that can be used to begin paging from
       that point later.
     remarks: ''
     isDeprecated: false
@@ -74,7 +116,11 @@ functions:
       parameters:
         - id: page
           type: unknown
-          description: A result object from calling .byPage() on a paged operation.
+          description: >-
+            An object from accessing `value` on the IteratorResult from a
+            `byPage` iterator.
       return:
-        description: The continuation token that can be passed into byPage().
+        description: >-
+          The continuation token that can be passed into byPage() during future
+          calls.
         type: string | undefined

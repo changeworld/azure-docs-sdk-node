@@ -110,7 +110,8 @@ methods:
         function beginDelete(resourceGroupName: string, serviceName: string,
         applicationAcceleratorName: string, options?:
         ApplicationAcceleratorsDeleteOptionalParams):
-        Promise<SimplePollerLike<OperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<ApplicationAcceleratorsDeleteHeaders>,
+        ApplicationAcceleratorsDeleteHeaders>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -133,8 +134,11 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
-          void&gt;&gt;
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
+          uid="@azure/arm-appplatform.ApplicationAcceleratorsDeleteHeaders"
+          />&gt;, <xref
+          uid="@azure/arm-appplatform.ApplicationAcceleratorsDeleteHeaders"
+          />&gt;&gt;
   - name: >-
       beginDeleteAndWait(string, string, string,
       ApplicationAcceleratorsDeleteOptionalParams)
@@ -147,7 +151,8 @@ methods:
       content: >-
         function beginDeleteAndWait(resourceGroupName: string, serviceName:
         string, applicationAcceleratorName: string, options?:
-        ApplicationAcceleratorsDeleteOptionalParams): Promise<void>
+        ApplicationAcceleratorsDeleteOptionalParams):
+        Promise<ApplicationAcceleratorsDeleteHeaders>
       parameters:
         - id: resourceGroupName
           type: string
@@ -169,7 +174,10 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;void&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appplatform.ApplicationAcceleratorsDeleteHeaders"
+          />&gt;
   - name: get(string, string, string, ApplicationAcceleratorsGetOptionalParams)
     uid: '@azure/arm-appplatform.ApplicationAccelerators.get'
     package: '@azure/arm-appplatform'
