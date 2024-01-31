@@ -1,0 +1,14 @@
+{
+  "Name": "@azure/eventhubs-checkpointstore-blob",
+  "Version": "1.1.0-alpha.20240126.2",
+  "DevVersion": "1.1.0-alpha.20240130.1",
+  "DirectoryPath": "sdk/eventhub/eventhubs-checkpointstore-blob",
+  "ServiceDirectory": "eventhub",
+  "ReadMePath": "sdk/eventhub/eventhubs-checkpointstore-blob/README.md",
+  "ChangeLogPath": "sdk/eventhub/eventhubs-checkpointstore-blob/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-eventhubs-checkpointstore-blob",
+  "ReleaseStatus": "Unreleased"
+}
